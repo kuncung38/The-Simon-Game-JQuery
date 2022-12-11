@@ -1,2 +1,2 @@
 # The-Simon-Game-JQuery
-Fun and simple exercise with JQuery + some async-await
+Fun and maybe not so simple exercise (for beginner like me) with JQuery and some Async-Await & Promise
