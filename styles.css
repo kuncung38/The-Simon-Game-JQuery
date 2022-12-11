@@ -12,10 +12,6 @@ body {
   -webkit-user-select: none; /* Safari */
 }
 
-p {
-  margin: 0;
-}
-
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 2.5rem;
