@@ -6,7 +6,7 @@ let isStarted = false
 let time = 500
 
 //!Game Start Here
-$(document).keypress(function() {
+$('#level-title').click(function() {
     if(!isStarted) {
         nextSequence()
         isStarted = true
@@ -85,11 +85,11 @@ async function checkAnswer(currentLevel) {
         setTimeout(()=> {
             $(document.body).removeClass('game-over')
         })
-        $('h1').text(`Game Over, Press Any Key to Restart`)
+        $('#level-title').text(`Game Over, Click here to Restart`)
         startOver()
     } else {
         if(userClickedPattern.length === gamePattern.length) {
-            time -= 5
+            time -= 10
             $('.btn').off('click')
             await sleep(1000).then(() => {
                 userClickedPattern = []
