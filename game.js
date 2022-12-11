@@ -84,7 +84,7 @@ async function checkAnswer(currentLevel) {
         $(document.body).addClass('game-over')
         setTimeout(()=> {
             $(document.body).removeClass('game-over')
-        })
+        },100)
         $('#level-title').text(`Game Over, Click here to Restart`)
         startOver()
     } else {
